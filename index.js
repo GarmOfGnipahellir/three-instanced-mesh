@@ -68,7 +68,7 @@ THREE.InstancedMesh = function (
 	 * this is in lieu of changing the renderer
 	 * WebGLRenderer injects stuff like this
 	 */
-	this.material = material.clone();
+	this.material = material;
  	
 	this.frustumCulled = false; //you can uncheck this if you generate your own bounding info
 
@@ -108,7 +108,7 @@ Object.defineProperties( THREE.InstancedMesh.prototype , {
 			 * 
 			 * or something else?
 			 */
-			m = m.clone();
+			m = m;
 
 			if ( m.defines ) {
 				
