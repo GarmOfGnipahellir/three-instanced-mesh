@@ -143,6 +143,7 @@ Object.defineProperties( THREE.InstancedMesh.prototype , {
 		set: function( v ){ 
 
 			this._numInstances = v;
+			this.geometry.maxInstancedCount = v;
 
 			//reset buffers
 
